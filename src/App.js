@@ -1,17 +1,29 @@
-import logo from './logo.svg';
-import hero from './assets/img/hero.png';
-import './input.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/aboutme';
+import Contact from './pages/contact';
+import Work from './pages/work';
+import Blog from './pages/blog';
+import Error from './pages/error';
 import Navbar from './components/Navbar';
+import BlogPost from './components/BlogPost';
+import Footer from './components/Footer';
 
 function App() {
-  return <>
-    <div className='bg-repeat min-h-screen' style={{ backgroundImage: 'url(/grid_background.webp)' }}> 
+  return (
+    <BrowserRouter>
       <Navbar />
-      <div className='flex justify-center'>
-        <img src={hero} className='md:w-9/12 md:max-w-5xl w-full' aria-label='Introduction image. Hello! My name is Myky Huynh' />
-      </div>
-    </div>
-  </>;
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:path" element={<BlogPost />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
