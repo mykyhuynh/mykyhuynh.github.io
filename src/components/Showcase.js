@@ -21,32 +21,25 @@ function Showcase() {
 
   const projects = [
     {
-      title: "My Project",
-      description: "This is my awesome project description",
-      tags: ["React", "TailwindCSS", "JavaScript"],
-      imageUrl: "/assets/img/yoshitomo.jpeg",
-      path: "https://github.com/mykyhuynh"
+      title: "Weather Simulation",
+      description: "Inspired by Monet's \"Haystacks\", this project seeked to showcase the effects of time of day, snow, and rain on a singular scene",
+      tags: ["C++", "OpenGL"],
+      imageUrl: "/assets/img/weather-proj.jpeg",
+      path: "https://docs.google.com/presentation/d/1fS3Rr0e6InCOjAGcQDe32s74RygyNonYMGmTt35AbWs/edit?usp=sharing"
     },
     {
-      title: "My Project 1",
-      description: "This is my awesome project description",
-      tags: ["WebGL"],
-      imageUrl: "/assets/img/yoshitomo.jpeg",
-      path: "/blog/my-project"
+      title: "Spotify Deep Dive",
+      description: "Data visualizations that were created using data from Spotify's API to identify trends in listening history",
+      tags: ["Python", "Spotify API"],
+      imageUrl: "/assets/img/spotify-deep-dive.jpeg",
+      path: "https://github.com/szaqadir/SpotifyDeepDive"
     },
     {
-      title: "My Project 2",
-      description: "This is my awesome project description",
-      tags: ["React", "TailwindCSS", "JavaScript"],
-      imageUrl: "/assets/img/yoshitomo.jpeg",
-      path: "/blog/my-project"
-    },
-    {
-      title: "My Project 3",
-      description: "This is my awesome project description",
-      tags: ["React", "TailwindCSS", "JavaScript"],
-      imageUrl: "/assets/img/yoshitomo.jpeg",
-      path: "/blog/my-project"
+      title: "Portfolio Site",
+      description: "What you're looking at currently! This was a project to establish my personal style on the worldwide web",
+      tags: ["React", "Tailwind CSS", "Javascript", "Contentful"],
+      imageUrl: "/assets/img/hero.png",
+      path: "https://github.com/mykyhuynh/mykyhuynh.github.io"
     },
     // Add more projects here
   ];
@@ -56,7 +49,7 @@ function Showcase() {
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {projects.map((project, index) => (
-            <div key={index} className="flex-[0_0_320px] min-w-0 px-2">
+            <div key={index} className="flex-[0_0_430px] max-sm:flex-[0_0_320px] min-w-0 px-2">
               <Card
                 title={project.title}
                 description={project.description}

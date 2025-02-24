@@ -1,6 +1,6 @@
 function Card({ title, description, tags, imageUrl, path }) {  // Added props
   return (
-    <div className="h-full rounded-xl overflow-hidden bg-white flex flex-col">
+    <div className="h-full rounded-xl overflow-hidden bg-white flex flex-col hover:opacity-80">
       <a href={path} className="flex flex-col h-full">
         <img
           src={imageUrl || "https://placehold.co/600x400"}

@@ -9,16 +9,16 @@ function Home() {
                     <img src='/assets/img/hero.png' className='lg:max-w-2xl sm:max-w-lg' aria-label='Introduction image. Hello! My name is Myky Huynh' />
                 </div>
                 <div className='max-sm:pb-10'>
-                    <h1 className='font-bold text-4xl'>developer and artist</h1>
+                    <h1 className='font-bold text-4xl'>developer & artist</h1>
                     <br />
-                    <ul>
-                        <li>Based in Indianapolis, IN</li>
-                        <li>Currently working as a web developer</li>
-                        <li>Passionate about technology, art, and all things in between!</li>
+                    <ul className='list-disc pl-5'>
+                        <li>currently working as a web developer @ <a href='https://lilly.com' className='font-semibold italic hover:underline'>Eli Lilly</a></li>
+                        <li>the web and the world are my canvases</li>
+                        <li>advocate of accessible and user-centric solutions</li>
                     </ul>
                     <br />
                     <button className='bg-transparent border border-stone-600 hover:bg-blue-100 px-5 py-1 rounded-full font-bold'>
-                        download my resume
+                        <a href='/assets/pdf/resume.pdf'>download my resume</a>
                     </button>
                 </div>
             </div>
@@ -28,9 +28,9 @@ function Home() {
                 <Showcase />
             </div>
 
-            <div className='grid max-sm:grid-cols-1 grid-cols-4 w-9/12 mx-auto p-8'>
+            <div className='grid max-sm:grid-cols-1 grid-cols-2 w-9/12 mx-auto p-8 place-items-center'>
                 <h2 className='font-bold text-3xl max-sm:text-center max-sm:mb-4'>let's connect!</h2>
-                <div className='max-sm:col-span-1 col-span-3 grid grid-cols-4 place-items-center'>
+                <div className='grid grid-cols-4 gap-5'>
                     <a href='mailto:myky.huynh@gmail.com' className='hover:animate-wiggle cursor-pointer'><img src="/assets/img/email.png" width={64} /></a>
                     <a href='https://www.linkedin.com/in/myky-huynh/' target="_blank" className='hover:animate-wiggle cursor-pointer'><img src="/assets/img/linkedin.png" width={64} /></a>
                     <a href='https://github.com/mykyhuynh' target="_blank" className='hover:animate-wiggle cursor-pointer'><img src="/assets/img/github.png" width={64} /></a>

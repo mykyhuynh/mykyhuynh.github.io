@@ -82,8 +82,13 @@ function Work() {
 
   return (
     <div className='bg-repeat min-h-screen' style={{ backgroundImage: 'url(/grid_background.webp)' }}>
+      <div class="flex h-screen">
+        <div class="m-auto flex flex-col items-center pb-44">
+          <h1 className='flex justify-center pb-10 font-bold text-3xl p-5'>˖ ࣪ ⊹ currently under construction ⊹ ࣪ ˖</h1>
+        </div>
+      </div>
       {/* Filter Tags */}
-      <div className="flex justify-center items-center gap-2 py-8 flex-wrap">
+      {/* <div className="flex justify-center items-center gap-2 py-8 flex-wrap">
         <p className="font-bold">Filter by:</p>
         {uniqueTags.map((tag) => (
           <button
@@ -98,10 +103,10 @@ function Work() {
             {tag}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* Project Cards */}
-      <div className="container mx-auto max-w-screen-lg max-lg:max-w-screen-md max-md:max-w-md">
+      {/* <div className="container mx-auto max-w-screen-lg max-lg:max-w-screen-md max-md:max-w-md">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-md:gap-4">
           {filteredProjects.map((project, index) => (
             <div 
@@ -123,10 +128,10 @@ function Work() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Modal/Interstitial */}
-      {selectedProject && (
+      {/* {selectedProject && (
         <div
           ref={modalRef}
           onClick={handleModalClick}
@@ -167,7 +172,7 @@ function Work() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
