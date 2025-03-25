@@ -8,7 +8,7 @@ function Home() {
                 <div className='lg:ml-28'>
                     <img src='/assets/img/hero.png' className='lg:max-w-2xl sm:max-w-lg' aria-label='Introduction image. Hello! My name is Myky Huynh' />
                 </div>
-                <div className='max-sm:pb-10'>
+                <div className='max-sm:px-6 mb-8'>
                     <h1 className='font-bold text-4xl'>developer & artist</h1>
                     <br />
                     <ul className='list-disc pl-5'>
@@ -23,7 +23,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className='bg-yellow-100 px-20 py-10'>
+            <div className='bg-yellow-100 px-20 py-10 max-sm:px-10'>
                 <h2 className='flex justify-center pb-10 font-bold text-3xl'>˖ ࣪ ⊹ featured work ⊹ ࣪ ˖</h2>
                 <Showcase />
             </div>

@@ -49,7 +49,7 @@ function Showcase() {
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {projects.map((project, index) => (
-            <div key={index} className="flex-[0_0_430px] max-sm:flex-[0_0_320px] min-w-0 px-2">
+            <div key={index} className="flex-[0_0_430px] max-sm:flex-[0_0_300px] min-w-0 px-2">
               <Card
                 title={project.title}
                 description={project.description}

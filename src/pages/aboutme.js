@@ -32,7 +32,7 @@ function AboutMe() {
       <div className="flex justify-center items-center p-8">
         <p className='font-bold text-4xl max-sm: text-center'>────୨ৎ──── about me ────୨ৎ────</p>
       </div>
-      <div className='grid max-sm:grid-cols-1 grid-cols-3 place-items-center px-16 py-10 gap-5 bg-white'>
+      <div className='grid max-sm:grid-cols-1 grid-cols-3 place-items-center px-16 max-sm:px-12 py-10 gap-5 bg-white'>
         <div className='col-span-2'>
           <p className="font-bold text-3xl">Hi again! I'm Myky ᯓ★</p>
           <br />
@@ -47,7 +47,7 @@ function AboutMe() {
           <img src="/assets/img/cat-sitting-sticker.png" className="absolute -bottom-6 -left-6 w-20"/>
         </div>
       </div>
-      <div className='flex justify-center items-center my-4'>
+      <div className='flex justify-center items-center my-4 max-sm:mx-3'>
         <div>
           <img 
             src={isDead ? '/assets/img/ghost_idle.gif' : (isHit ? '/assets/img/hit.gif' : '/assets/img/avatar_idle.gif')} 
@@ -55,14 +55,14 @@ function AboutMe() {
             className="cursor-pointer"
           />
         </div>
-        <div>
-          <div className="font-bold text-3xl"><h2>meekee</h2></div>
+        <div className="mr-8">
+          <div className="font-bold text-3xl max-sm:text-2xl"><h2>meekee</h2></div>
           <div className='grid grid-cols-5 gap-1'>
             {[...Array(5)].map((_, index) => (
               <img 
                 key={index}
                 src='/assets/img/pixel-heart.png' 
-                className={`h-10 transition-opacity duration-300 ${index >= heartCount ? 'opacity-0' : 'opacity-100'}`}
+                className={`w-10 transition-opacity duration-300 ${index >= heartCount ? 'opacity-0' : 'opacity-100'}`}
               />
             ))}
           </div>
